@@ -59,10 +59,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "your_service_id", // Replace with your EmailJS service ID
-        "your_template_id", // Replace with your EmailJS template ID
+        "service_yus08ih", // Replace with your EmailJS service ID
+        "template_zr0x9qc", // Replace with your EmailJS template ID
         form.current,
-        "your_user_id" // Replace with your EmailJS user ID
+        "TT435MetBDq3BnIdT" // Replace with your EmailJS user ID
       )
       .then(
         (result) => {
