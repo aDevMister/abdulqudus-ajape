@@ -28,7 +28,9 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0 "
             >
-              lorem
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit.
             </motion.p>
           </div>
           <motion.div

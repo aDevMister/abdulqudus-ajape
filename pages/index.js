@@ -66,9 +66,9 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 lg:pt-0 pt-12 md:pt-8"
           >
-            Transforming Ideas <br /> Into
+            Transforming Ideas Into
             <span className="text-accent pl-5">Digital Reality</span>
           </motion.h1>
           <motion.p
@@ -76,7 +76,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 "
           >
             Checking the network cables, modem, and router. Reconnecting to
             Wi-Fi.
@@ -101,7 +101,7 @@ const Home = () => {
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 "></div>
         <ParticlesContainer />
         <motion.div
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]  "
+          className="w-full h-full max-w-[737px] max-h-[678px] absolute  lg:bottom-0 lg:right-[8%]  "
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"
