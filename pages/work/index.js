@@ -26,11 +26,12 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 "
+              className="mb-4 max-w-[400px] w-full mx-auto lg:mx-0 "
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit.
+              Explore my portfolio of projects that demonstrate my commitment to
+              quality and creativity. Each piece highlights my ability to solve
+              challenges and deliver impactful digital experiences that resonate
+              with users.
             </motion.p>
           </div>
           <motion.div

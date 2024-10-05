@@ -44,50 +44,29 @@ const aboutData = [
       },
     ],
   },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
+  // {
+  //   title: "awards",
+  //   info: [
+  //     {
+  //       title: "Webby Awards - Honoree",
+  //       stage: "2011 - 2012",
+  //     },
+  //     {
+  //       title: "Adobe Design Achievement Awards - Finalist",
+  //       stage: "2009 - 2010",
+  //     },
+  //   ],
+  // },
   {
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Front-End Developer - MSME Ecosystem LTD.",
+        stage: "July 2023 - July 2024",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Web Developer - Toshconsult Technologies Inc.",
+        stage: "April 2023 - July 2023",
       },
     ],
   },
@@ -117,8 +96,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent  ">stories</span> birth
-            magnificent designs.
+            Driven by Code, <span className="text-accent  ">Shaped</span> by
+            Creativity
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -127,9 +106,10 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 "
           >
-            2 years ago, i began freelancing as a developer. since then, I&apos;ve
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use
+            With a passion for technology and design, I specialize in building
+            responsive, user-friendly interfaces. I collaborate closely with
+            clients to bring their visions to life, ensuring each project
+            reflects their unique identity and goals.
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -179,14 +159,14 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px] "
+          className="flex flex-col w-full overflow-y-auto xl:max-w-[48%]  h-[480px] "
         >
-          <div className="flex gap-x-4 xl:gap-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex gap-x-4 xl:gap-8  mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
-                  className={`cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:bottom-1 after:left-0 ${
+                  className={`cursor-pointer capitalize xl:text-lg relative  after:w-8 after:h-[2px] after:bg-white after:absolute after:bottom-1 after:left-0 ${
                     index === itemIndex
                       ? "text-accent after:w-[100%] after:bg-accent"
                       : ""
@@ -198,7 +178,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col lg:border-none lg:px-0 px-1 border-x-2  gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
