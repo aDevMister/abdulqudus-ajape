@@ -1,23 +1,33 @@
-import Image from "next/image";
+// components/Navbar.js
+
 import Link from "next/link";
-import Socials from "../components/Socials";
+import { FaInstagram, FaGithub } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
 
-const Header = () => {
+export default function Header() {
   return (
-    <>
-      <header className="fixed z-10 w-full flex items-center  ">
-        <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-5">
-            <Link href={"/"} className="flex items-center gap-3 ">
-              <h1 className="text-white text-2xl font-bold">AbdulQudus </h1>
-              <h1 className="text-accent text-2xl ">Ajape </h1>
-            </Link>
-            <Socials />
-          </div>
+    <nav className="bg-primary/10 text-white px-4 pt-6">
+      <div className="lg:container mx-auto lg:flex-row flex flex-col gap-2 justify-between items-center">
+        <div className="text-2xl flex flex-row gap-2 font-bold">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-purple-500 to-pink-500">
+            AbdulQudus
+          </span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-accent to-blue-400">
+            Ajape
+          </span>
         </div>
-      </header>
-    </>
+        <div className="flex items-center space-x-4">
+          <Link href="https://instagram.com" target="_blank">
+            <FaInstagram className="text-2xl hover:text-pink-500 transition-colors duration-300" />
+          </Link>
+          <Link href="https://twitter.com" target="_blank">
+            <RiTwitterXLine className="text-2xl hover:text-blue-400 transition-colors duration-300" />
+          </Link>
+          <Link href="https://github.com" target="_blank">
+            <FaGithub className="text-2xl hover:text-gray-500 transition-colors duration-300" />
+          </Link>
+        </div>
+      </div>
+    </nav>
   );
-};
-
-export default Header;
+}

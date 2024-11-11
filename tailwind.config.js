@@ -8,6 +8,10 @@ module.exports = {
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  plugins: [
+    require('flowbite/plugin')
+],
+
   theme: {
     container: {
       padding: {
