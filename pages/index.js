@@ -4,7 +4,7 @@ import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className="">
+    <>
       <div className="text-center flex flex-col justify-center h-[80vh] lg:text-left container mx-auto">
         <motion.h1
           variants={fadeIn("down", 0.4)}
@@ -43,8 +43,8 @@ const Home = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
         ></motion.div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default Home
+export default Home;
