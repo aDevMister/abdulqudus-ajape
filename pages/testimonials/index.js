@@ -12,13 +12,14 @@ const Testimonials = () => {
           exit="hidden"
           className="h2 mb-8 xl:mb-0"
         >
-          What clients <span className="text-accent">say.</span>
+          Feedback &  <span className="text-accent">Experiences.</span>
         </motion.h2>
         <motion.div
           variants={fadeIn("up", "0.4")}
           initial="hidden"
           animate="show"
           exit="hidden"
+          className="w-[50%"
         >
           <TestimonialSlider />
         </motion.div>

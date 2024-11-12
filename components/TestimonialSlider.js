@@ -1,74 +1,73 @@
-// testimonial data
-
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
 
-// icons
+// Icons
 import { FaQuoteLeft } from "react-icons/fa";
 
-import {Navigation, Pagination } from "swiper";
-
-// data
+// Swiper modules
+import { Navigation, Pagination } from "swiper";
 
 const TestimonialSlider = () => {
   const testimonialSlider = [
     {
-      image: "/t-avt-1.png",
-      name: "Anne Smith",
-      position: "Customer",
+      image: "/passport.jpg",
+      name: "Taofeeq Kolapo",
+      position: "Software Developer",
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+        "I am writing to wholeheartedly recommend Abdulqudus Ajape, a talented and exceptional frontend developer with whom I have had the pleasure of working on several projects. Abdulqudus's technical expertise, work ethic and dedication to delivering high-quality results make him an invaluable asset to any team...",
     },
     {
-      image: "/t-avt-2.png",
-      name: "Jane Doe",
-      position: "Customer",
+      image: "/honor.jpg",
+      name: "Faruq Olaniyi Gbadegesin",
+      position: "Software Engineer | CEO Dakieo Farm",
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+        "I am writing to enthusiastically recommend AbdulQudus Ajape for any frontend development opportunities that may come his way. I had the pleasure of working closely with AbdulQudus Ajape on a recent project and I can confidently say that his skills, dedication and professionalism greatly contributed to our team's success...",
     },
-    {
-      image: "/t-avt-3.png",
-      name: "Jhon Doe",
-      position: "Customer",
-      message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-    },
+
   ];
+
   return (
     <Swiper
-    navigation={true}
-    pagination={{
-        clickable: true,
-      }}
-      modules={[Navigation,Pagination]} // Fix: modules should be an array
-      className="h-[280px]"
+      navigation={true}
+      pagination={{ clickable: true }}
+      modules={[Navigation, Pagination]}
+      className="h-[400px] "
     >
-      {testimonialSlider.map((person, index) => {
-        return (
-          <SwiperSlide key={index}>
-            <div className="flex flex-col items-center md:flex-row gap-x-8 h-full px-16 " >
-              <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0 ">
-                <div className="flex flex-col justify-center text-center " >
-                  <div className="mb-2 mx-auto ">
-                    <Image src={person.image} width={100} height={100} alt="" />
-                  </div>
-                  <div className="text-lg" >{person.name}</div>
-                  <div className="text-[12px] uppercase font-extralight tracking-widest " > {person.position} </div>
+      {testimonialSlider.map((person, index) => (
+        <SwiperSlide key={index}>
+          <div className="flex flex-col items-center md:flex-row gap-x-8 h-[70vh] px-12">
+            <div className="w-full max-w-[300px] flex flex-col items-center relative mx-auto md:mx-0">
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-4 mx-auto">
+                  <Image
+                    src={person.image}
+                    width={100}
+                    height={100}
+                    alt={person.name}
+                    className="rounded-full"
+                  />
                 </div>
-              </div>
-              <div className=" flex-1 flex flex-col justify-center before:w-[1px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20 ">
-                <div className="mb-4">
-                  <FaQuoteLeft className="text-4xl xl:text-6xl  text-white/20 mx-auto md:mx-0 " />
+                <div className="text-lg font-medium">{person.name}</div>
+                <div className="text-sm uppercase font-light tracking-widest">
+                  {person.position}
                 </div>
-                <div className="xl:text-lg text-center md:text-left ">{person.message}</div>
               </div>
             </div>
-          </SwiperSlide>
-        );
-      })}
+            <div className="flex-1 flex flex-col justify-center relative md:pl-10">
+              <div className="mb-4">
+                <FaQuoteLeft className="text-4xl text-white/20 mx-auto md:mx-0" />
+              </div>
+              <div className="text-base xl:text-lg text-center md:text-left leading-relaxed">
+                {person.message}
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
