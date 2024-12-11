@@ -7,9 +7,9 @@ import { fadeIn } from "../../variants";
 export const serviceData = [];
 const Services = () => {
   return (
-    <div className="h-full bg-primary/30  lg:px-[9rem] flex items-center ">
+    <div className="lg:h-full h-[80vh] bg-primary/30  lg:px-[9rem] flex items-center ">
       <Circles />
-      <div className="container mx-auto">
+      <div className="container  mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-8 ">
           <div className="text-center flex  flex-col lg:text-left  xl:mb-0 ">
             <motion.h2
@@ -38,7 +38,7 @@ const Services = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="w-full py-12 lg:max-w-[65%]"
+            className="w-full lg:py-12 lg:max-w-[65%]"
           >
             <ServiceSlider />
           </motion.div>

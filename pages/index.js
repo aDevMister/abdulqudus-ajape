@@ -5,7 +5,7 @@ import { fadeIn } from "../variants";
 const Home = () => {
   return (
     <>
-      <div className="text-center flex flex-col justify-center h-[80vh] lg:text-left container mx-auto">
+      <div className="text-center flex flex-col justify-center lg:h-[80vh] h-[70vh]   lg:text-left container mx-auto">
         <motion.h1
           variants={fadeIn("down", 0.4)}
           initial="hidden"
@@ -32,7 +32,7 @@ const Home = () => {
       </div>
 
       <div className="w-[1200px] h-full absolute right-0 bottom-0 ">
-        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 "></div>
+        <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0 "/>
         <ParticlesContainer />
         <motion.div
           className="w-full h-full max-w-[737px] max-h-[678px] absolute lg:bottom-0 lg:right-[8%]"
@@ -44,7 +44,7 @@ const Home = () => {
         ></motion.div>
       </div>
     </>
-  );
+  )
 };
 
 export default Home;

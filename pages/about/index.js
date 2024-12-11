@@ -6,13 +6,12 @@ import CountUp from "react-countup";
 // icons
 import {
   FaHtml5,
-  FaCss3,
   FaJs,
   FaReact,
   FaBootstrap,
-  FaCss3Alt,
   FaGit,
   FaGithub,
+  FaArrowCircleDown,
 } from "react-icons/fa";
 
 import {
@@ -61,8 +60,12 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Front-End Developer - MSME Ecosystem LTD.",
+        title: "Co-founder - AiNameIt.",
         stage: "July 2023 - July 2024",
+      },
+      {
+        title: "Front-End Developer - MSME Ecosystem LTD.",
+        stage: "May 2024 - Present",
       },
       {
         title: "Web Developer - Toshconsult Technologies Inc.",
@@ -119,14 +122,7 @@ const About = () => {
                   Years of Experience
                 </div>
               </div>
-              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                  <CountUp start={0} end={250} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Satisfied clients
-                </div>
-              </div> */}
+
               <div className="relative flex-1  ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
                   <CountUp start={0} end={5} duration={5} /> +
@@ -135,14 +131,6 @@ const About = () => {
                   Finished projects
                 </div>
               </div>
-             {/*  <div className="relative flex-1  ">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
-                  <CountUp start={0} end={8} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] ">
-                  Winning awards
-                </div>
-              </div> */}
             </div>
           </motion.div>
         </div>
@@ -154,6 +142,7 @@ const About = () => {
           className="flex flex-col w-full  xl:max-w-[48%] h-[20px] lg:h-[420px] "
         >
           <div className="flex gap-x-4 xl:gap-8  mx-auto xl:mx-0 mb-4">
+            <FaArrowCircleDown className="text-xl text-grey lg:hidden block animate-bounce " />
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -169,6 +158,7 @@ const About = () => {
                 </div>
               );
             })}
+            <FaArrowCircleDown className="text-xl text-grey lg:hidden block animate-bounce " />
           </div>
           <div className=" lg:py-6 flex flex-col  lg:px-0 px-1   gap-y-1 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
@@ -177,7 +167,7 @@ const About = () => {
                   key={itemIndex}
                   className=" flex flex-col lg:flex-row max-w-max gap-x-2 items-center text-white/60  "
                 >
-                  <div className="font-light text-[14px] mb-2 md:mb-0 ">
+                  <div className="font-light text-center  text-[14px] mb-2 md:mb-0 ">
                     {item.title}
                   </div>
                   {item.stage && <div>{item.stage}</div>}

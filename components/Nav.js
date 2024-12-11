@@ -53,7 +53,7 @@ const Nav = () => {
               </div>
               <div>{link.icon}</div>
             </Link>
-          );
+          )
         })}
       </div>
     </nav>

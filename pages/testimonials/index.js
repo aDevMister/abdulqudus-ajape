@@ -19,7 +19,7 @@ const Testimonials = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="w-[50%"
+          className="w-[50%]"
         >
           <TestimonialSlider />
         </motion.div>

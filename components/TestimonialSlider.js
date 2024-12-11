@@ -14,7 +14,7 @@ import { Navigation, Pagination } from "swiper";
 const TestimonialSlider = () => {
   const testimonialSlider = [
     {
-      image: "/passport.jpg",
+      image: "/taofeeq.jpg",
       name: "Taofeeq Kolapo",
       position: "Software Developer",
       message:
