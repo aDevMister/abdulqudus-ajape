@@ -25,6 +25,7 @@ import {
   SiPostman,
   SiFigma,
 } from "react-icons/si";
+import Bulb from "../../components/Bulb";
 
 //  data
 const aboutData = [
@@ -186,6 +187,8 @@ const About = () => {
           </div>
         </motion.div>
       </div>
+      <Bulb />
+
     </div>
   );
 };

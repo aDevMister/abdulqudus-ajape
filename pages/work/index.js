@@ -17,9 +17,11 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 pt-12 lg:mt-[2rem]"
+              className="lg:pt-0 pt-4"
             >
-              My work <span className="text-accent">,</span>{" "}
+              <div className="h2">
+                My work <span className="text-accent">,</span>
+              </div>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -27,7 +29,6 @@ const Work = () => {
               animate="show"
               exit="hidden"
               className="mb-4 max-w-[400px]  md:max-w-[100%] mx-auto lg:mx-0 "
-
             >
               Explore my portfolio of projects that demonstrate my commitment to
               quality and creativity. Each piece highlights my ability to solve

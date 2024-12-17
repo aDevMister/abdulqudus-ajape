@@ -35,12 +35,12 @@ const TestimonialSlider = () => {
       navigation={true}
       pagination={{ clickable: true }}
       modules={[Navigation, Pagination]}
-      className="h-[400px] "
+      className="h-[340px] "
     >
       {testimonialSlider.map((person, index) => (
         <SwiperSlide key={index}>
-          <div className="flex flex-col items-center md:flex-row gap-x-8 h-[70vh] px-12">
-            <div className="w-full max-w-[300px] flex flex-col items-center relative mx-auto md:mx-0">
+          <div className="flex flex-col items-center overflow-y-auto md:flex-row gap-x-3 h-[42vh] px-12">
+            <div className="w-full max-w-[300px] flex flex-col items-center relative  md:mx-0">
               <div className="flex flex-col items-center text-center">
                 <div className="mb-4 mx-auto">
                   <Image
