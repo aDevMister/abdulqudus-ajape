@@ -17,13 +17,13 @@ export default function Header() {
           </span>
         </div>
         <div className="flex items-center space-x-4">
-          <Link href="https://instagram.com" target="_blank">
+          <Link href="https://instagram.com/devgorithm" target="_blank">
             <FaInstagram className="text-2xl hover:text-pink-500 transition-colors duration-300" />
           </Link>
-          <Link href="https://twitter.com" target="_blank">
+          <Link href="https://x.com/devgorithm" target="_blank">
             <RiTwitterXLine className="text-2xl hover:text-blue-400 transition-colors duration-300" />
           </Link>
-          <Link href="https://github.com" target="_blank">
+          <Link href="https://github.com/adevmister" target="_blank">
             <FaGithub className="text-2xl hover:text-gray-500 transition-colors duration-300" />
           </Link>
         </div>

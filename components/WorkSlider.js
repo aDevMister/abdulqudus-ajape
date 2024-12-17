@@ -7,7 +7,7 @@ import Image from "next/image";
 // icons
 import { BsArrowRight } from "react-icons/bs";
 
-import { FreeMode, Pagination } from "swiper";
+import { Pagination } from "swiper";
 import Link from "next/link";
 
 // data
@@ -23,44 +23,22 @@ const WorkSlider = () => {
             link:'https://ainameit.com'
           },
           {
-            title: "title",
-            path: "/purse.png",
-            link:'https://purse.tulupay.com'
+            title: "My Portfolio",
+            path: "/mpp.png",
+            link:'https://abdulqudus-ajape.vercel.app'
           },
           {
-            title: "title",
+            title: "Documentation Website",
             path: "/doc.png",
             link:'https://docs.tulupay.com'
           },
           {
-            title: "title",
-            path: "/thumb4.jpg",
-            link:''
+            title: "Purse",
+            path: "/purse.png",
+            link:'https://purse.tulupay.com'
           },
-        ],
-      },
-      {
-        images: [
-          {
-            title: "title",
-            path: "/thumb4.jpg",
-            link:''
-          },
-          {
-            title: "title",
-            path: "/thumb1.jpg",
-            link:''
-          },
-          {
-            title: "title",
-            path: "/thumb2.jpg",
-            link:''
-          },
-          {
-            title: "title",
-            path: "/thumb3.jpg",
-            link:''
-          },
+         
+        
         ],
       },
     ],
@@ -72,12 +50,12 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]} // Fix: modules should be an array
-      className="h-[280px] sm:h-[480px]"
+      className="h-[220px] sm:h-[340px]"
     >
       {workSlider.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+            <div className="grid grid-cols-2 grid-rows-2 gap-4  cursor-pointer">
               {slide.images.map((image, index) => {
                 return (
                   <div key={index} className="relative rounded-lg overflow-hidden flex items-center justify-center group">

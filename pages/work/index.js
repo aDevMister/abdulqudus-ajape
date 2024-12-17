@@ -7,17 +7,17 @@ import { fadeIn } from "../../variants";
 export const serviceData = [];
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center ">
+    <div className="lg:h-[90vh] md:h-[70vh] sm:h-[90vh] bg-primary/30 lg:mb-[12rem]  lg:px-[9rem] flex items-center ">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8 ">
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0 ">
+          <div className="text-center flex lg:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0 ">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-12  "
+              className="h2 pt-12 lg:mt-[2rem]"
             >
               My work <span className="text-accent">,</span>{" "}
             </motion.h2>
@@ -26,7 +26,8 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] w-full mx-auto lg:mx-0 "
+              className="mb-4 max-w-[400px]  md:max-w-[100%] mx-auto lg:mx-0 "
+
             >
               Explore my portfolio of projects that demonstrate my commitment to
               quality and creativity. Each piece highlights my ability to solve

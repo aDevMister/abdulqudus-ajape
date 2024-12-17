@@ -7,7 +7,7 @@ import { fadeIn } from "../../variants";
 export const serviceData = [];
 const Services = () => {
   return (
-    <div className="lg:h-full h-[80vh] bg-primary/30  lg:px-[9rem] flex items-center ">
+    <div className="lg:h-[90vh] md:h-[70vh] h-[80vh] bg-primary/30 lg:mb-[12rem]  lg:px-[9rem] flex items-center ">
       <Circles />
       <div className="container  mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-8 ">
@@ -17,7 +17,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8"
+              className="h2 lg:mt-[2rem]"
             >
               My services <span className="text-accent">,</span>{" "}
             </motion.h2>
@@ -26,7 +26,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] text-wrap mx-auto lg:mx-0 "
+              className="mb-4 max-w-[400px]  md:max-w-[100%] mx-auto lg:mx-0 "
             >
               I offer custom front-end development, from sleek landing pages to
               powerful web apps, using the latest technologies to create designs

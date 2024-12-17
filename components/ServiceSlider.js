@@ -2,16 +2,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-
-// icons
 import {
   RxCrop,
   RxPencil2,
   RxDesktop,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight,
-  RxRotateCounterClockwise,
 } from "react-icons/rx";
 
 import { FreeMode, Navigation, Pagination } from "swiper";
@@ -56,7 +50,7 @@ const ServiceSlider = () => {
         clickable: true,
       }}
       modules={[FreeMode, Pagination]} // Fix: modules should be an array
-      className="h-[240px] sm:h-[340px]"
+      className="h-[220px] sm:h-[340px]"
     >
       {serviceData.map((item, index) => {
         return (
@@ -65,18 +59,14 @@ const ServiceSlider = () => {
             navigation={true}
             pagination={{ clickable: true }}
             modules={[Navigation, Pagination]}
-            className="h-[400px] "
           >
-            <div className="bg-[rgba(64,47,123,0.15)] rounded-lg lg:px-6 lg:py-8 py-2 px-2 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
-              <div className="text-2xl text-accent mb-2">{item.icon}</div>
-              <div className="">
+            <div className="bg-[rgba(64,47,123,0.15)] hover:bg-[rgba(89,65,169,0.15)] rounded-md lg:h-[40vh] md:h-[30vh] lg:mb-[50rem] p-6 transition-all duration-300">
+              <div className="text-2xl  text-accent mb-2">{item.icon}</div>
+              <div>
                 <div className="mb-2">{item.title}</div>
-                <p className="max-w-[100%] text-left text-[12px] leading-normal ">
+                <p className="text-[12px] leading-normal ">
                   {item.description}
                 </p>
-              </div>
-              <div className="text-[14px] lg:pt-5 mt-4 sm:mt-0 relative">
-                <RxRotateCounterClockwise className="group-hover:animate-spin group-hover:text-accent  transition-all duration-300" />
               </div>
             </div>
           </SwiperSlide>
