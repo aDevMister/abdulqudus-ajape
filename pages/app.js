@@ -2,6 +2,7 @@ import {Sora} from '@next/font/google'
 import Nav from '../components/Nav'
 import Header from '../components/Header'
 import TopLeftImg from '../components/TopLeftImg'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const sora = Sora({
   subsets: ['latin'],
@@ -21,6 +22,7 @@ const Layout = ({children}) => {
     <Nav/>
     <Header />
     {children}
+    <SpeedInsights />
   </div>
   );
 };
