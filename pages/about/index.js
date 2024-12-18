@@ -80,7 +80,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="lg:h-full h-[70vh] bg-primary/30 flex items-center justify-center  text-center xl:text-left">
+    <div className="lg:h-full h-[70vh] flex items-center justify-center  text-center xl:text-left">
       <Circles />
 
       <div className="container mx-auto  lg:h-full overflow-y-auto flex flex-col items-center lg:flex-row justify-center gap-x-6">

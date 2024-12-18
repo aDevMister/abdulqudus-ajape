@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 const Testimonials = () => {
   return (
-    <div className=" bg-primary/30 h-[100vh] pt-[2rem]  text-center ">
+    <div className="  h-[100vh] pt-[2rem]  text-center ">
       <div className="container mx-auto flex flex-col justify-center  ">
         <motion.h2
           variants={fadeIn("up", "0.2")}

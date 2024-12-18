@@ -7,7 +7,7 @@ const Contact = () => {
   const whatsappLink = "https://wa.me/+2349059402184"; 
 
   return (
-    <div className="h-full bg-primary/30 ">
+    <div className="h-full ">
       <div className="container mx-auto py-32 text-center lg:text-left flex items-center justify-center h-[80vh]  ">
         <div className="flex flex-col w-full max-w-[700px] ">
           <motion.h2
